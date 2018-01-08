@@ -629,7 +629,7 @@ class Swiper extends Component {
 
     const swipableCardStyle = this.calculateSwipableCardStyle()
     const firstCardContent = cards[firstCardIndex]
-    const firstCard = this.props.renderCard(firstCardContent)
+    const firstCard = this.props.renderCard(firstCardContent, true)
     const renderOverlayLabel = this.renderOverlayLabel()
 
     const notInfinite = !this.props.infinite
@@ -655,7 +655,7 @@ class Swiper extends Component {
 
     const secondCardZoomStyle = this.calculateSecondCardZoomStyle()
     const secondCardContent = cards[secondCardIndex]
-    const secondCard = renderCard(secondCardContent)
+    const secondCard = renderCard(secondCardContent, false)
 
     const notInfinite = !this.props.infinite
     const lastCardOrSwipedAllCards =
